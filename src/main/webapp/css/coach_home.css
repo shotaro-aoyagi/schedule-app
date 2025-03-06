@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+.coach-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.coach-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.coach-container .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #4CAF50; /* 緑の枠線 */
+    color: #4CAF50;
+    background: white;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.coach-container .btn:hover {
+    background: #4CAF50;
+    color: white;
+}
+
+.coach-container .logout-btn {
+    border: 2px solid #d9534f; /* 赤の枠線 */
+    color: white;
+    background: #d9534f;
+}
+
+.coach-container .logout-btn:hover {
+    background: #c9302c;
+}
+
+/* 黒丸（リストの `•`）を削除 */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* スマホ対応 */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    input[type="text"], input[type="password"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+/* ボタンのデザイン */
+.button {
+    display: block;
+    width: 60%;  /* ボタンをやや小さめに */
+    max-width: 300px; /* 最大幅を制限 */
+    padding: 8px 10px; /* 高さを調整（デフォルトより小さめ） */
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 10px auto; /* 上下の余白と中央配置 */
+}
+
+/* ユーザー一覧・出席管理ボタン（通常時は緑の枠、文字は緑） */
+.button-green {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+/* ホバー時のエフェクト（背景が緑、中の文字が白） */
+.button-green:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* ログアウトボタンは赤色 */
+.button-red {
+    background-color: #E74C3C;
+    color: white;
+    border: 2px solid #E74C3C;
+}
+
+/* ホバー時のエフェクト（少し暗い赤） */
+.button-red:hover {
+    background-color: #C0392B;
+}

@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/* 🟢 全体のスタイル */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* 🟢 メインコンテナ */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 🟢 カード風デザイン */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* 🟢 見出し */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* 出席状況テーブル */
+.table-container {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center; /* 中央揃え */
+}
+
+table {
+    width: 80%;  /* 画面幅の80%を使用 */
+    max-width: 500px; /* 最大幅を500pxに広げる */
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* セルのデザイン */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* 余白を増やして見やすく */
+    text-align: center;
+    font-size: 16px; /* 文字を少し大きめに */
+}
+
+/* ヘッダーのデザイン */
+th {
+    background: #4CAF50;
+    color: white;
+    font-size: 18px; /* ヘッダーの文字を強調 */
+}
+
+
+/* ボタンのデザイン */
+.button {
+    display: block;
+    width: 60%;  /* ボタンをやや小さめに */
+    max-width: 300px; /* 最大幅を制限 */
+    padding: 8px 10px; /* 高さを調整（デフォルトより小さめ） */
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 10px auto; /* 上下の余白と中央配置 */
+}
+
+/* ユーザー一覧・出席管理ボタン（通常時は緑の枠、文字は緑） */
+.button-green {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+/* ホバー時のエフェクト（背景が緑、中の文字が白） */
+.button-green:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* ログアウトボタンは赤色 */
+.button-red {
+    background-color: #E74C3C;
+    color: white;
+    border: 2px solid #E74C3C;
+}
+
+/* ホバー時のエフェクト（少し暗い赤） */
+.button-red:hover {
+    background-color: #C0392B;
+}
+
+
+/* 黒丸（リストの `•`）を削除 */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* スマホ対応 */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    input[type="text"], input[type="password"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}

@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/* 出席登録フォームのデザイン調整 */
+.form-container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 60%;  /* フォーム全体を小さめにする */
+    max-width: 400px; /* 最大幅を設定 */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* フォームの入力欄を小さくする */
+.form-group input,
+.form-group select {
+    width: 80%;  /* 画面いっぱいに広がらないように */
+    padding: 8px; /* 入力欄の高さを小さめに */
+    font-size: 14px;
+    border-radius: 8px; /* 角を少し丸く */
+    border: 1px solid #ccc;
+}
+
+/* === 登録ボタンのデザイン（緑色） === */
+.button-primary {
+    background-color: #4CAF50; /* 緑色 */
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button-primary:hover {
+    background-color: #45a049; /* 少し濃い緑 */
+    transform: scale(1.02); /* ホバー時に少し拡大 */
+}
+
+
+
+
+/* 全体のコンテナ */
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px; /* 角を丸く */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* テーブルのスタイル */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 10px; /* 角を丸く */
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #4CAF50;  /* 緑色のヘッダー */
+    color: white;
+}
+
+/* ボタンのデザイン */
+.button {
+    display: block;
+    width: 60%;  /* ボタンをやや小さめに */
+    max-width: 300px; /* 最大幅を制限 */
+    padding: 8px 10px; /* 高さを調整（デフォルトより小さめ） */
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 10px auto; /* 上下の余白と中央配置 */
+}
+
+/* ユーザー一覧・出席管理ボタン（通常時は緑の枠、文字は緑） */
+.button-green {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+/* ホバー時のエフェクト（背景が緑、中の文字が白） */
+.button-green:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* ログアウトボタン */
+.logout-button {
+    border: 2px solid #d9534f;
+    background-color: #d9534f;
+    color: white;
+}
+
+.logout-button:hover {
+    background-color: white;
+    color: #d9534f;
+}
+
+/* スマホ対応 */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    input[type="text"], input[type="password"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+

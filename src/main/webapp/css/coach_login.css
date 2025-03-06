@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/* 全体のフォントと背景設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;  /* 横方向の中央配置 */
+    align-items: center;  /* 縦方向の中央配置 */
+    height: 100vh;
+    margin: 0;
+}
+
+/* 🔹 ログインフォーム全体を中央に配置 */
+.login-container {
+    width: 350px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 50px auto;
+}
+
+/* 入力フィールドのスタイル */
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px); /* 幅を100%に近づける */
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* 🔹 見出し（タイトル） */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 🔹 入力フィールドのスタイル */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 🔹 ログインボタン */
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* 🔹 ホバー時のボタン */
+.login-button:hover {
+    background-color: #45a049;
+}
+
+/* 🔹 戻るリンク */
+.back-link {
+    display: block;
+    margin-top: 15px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 エラーメッセージ */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* スマホサイズ用の調整（画面幅 600px 以下の場合） */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;   /* 画面幅の 90% を使用 */
+    max-width: 380px;  /* 最大幅を 380px に */
+    margin: 40px auto;  /* 上下に余白を取り、中央配置 */
+  }
+
+  .form-container {
+    width: 100%; /* フォームを親要素に合わせる */
+    padding: 20px; /* 余白を適切に */
+    font-size: 18px; /* 文字を読みやすく */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 影を追加して見やすく */
+  }
+
+  input, select, button {
+    width: 100%; /* 入力欄を画面幅いっぱいに */
+    font-size: 16px; /* 文字サイズを適切に */
+    padding: 12px; /* クリックしやすく */
+  }
+
+  button {
+    background-color: #4CAF50; /* 緑色 */
+    border: none;
+    border-radius: 6px; /* 角を丸く */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 14px;
+  }
+
+  button:hover {
+    background-color: #45a049; /* 少し濃い緑に */
+  }
+}
+
+@media (min-width: 768px) {
+  .login-container {
+    max-width: 600px;  /* タブレットやPCで少し大きめに */
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-container {
+    max-width: 700px;  /* PCではより広く */
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    min-height: 500px; /* スマホではもう少し高さを確保 */
+    padding: 40px;
+  }
+}
+
