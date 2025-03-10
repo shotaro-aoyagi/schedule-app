@@ -1,1 +1,1 @@
-echo web: java \$JAVA_OPTS -Dserver.port=\$PORT -jar target/web-app-sample.war > Procfile
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar target/web-app-sample.war
