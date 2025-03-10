@@ -56,6 +56,16 @@
     		<artifactId>tomcat-catalina</artifactId>
     		<version>9.0.84</version>  <!-- ここは最新バージョンに変更 -->
 		</dependency>
+		<dependency>
+    		<groupId>org.apache.tomcat.embed</groupId>
+    		<artifactId>tomcat-embed-core</artifactId>
+    		<version>9.0.56</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.apache.tomcat.embed</groupId>
+    		<artifactId>tomcat-embed-jasper</artifactId>
+    		<version>9.0.56</version>
+		</dependency>
 	</dependencies>
 
     <build>
