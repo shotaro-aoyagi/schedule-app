@@ -1,4 +1,3 @@
-target/
 !target/ROOT.war
 .settings/
 .classpath
