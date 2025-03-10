@@ -51,7 +51,12 @@
         	<artifactId>commons-codec</artifactId>
         	<version>1.15</version>
     	</dependency>
-    </dependencies>
+    	<dependency>
+    		<groupId>org.apache.tomcat</groupId>
+    		<artifactId>tomcat-catalina</artifactId>
+    		<version>9.0.84</version>  <!-- ここは最新バージョンに変更 -->
+		</dependency>
+	</dependencies>
 
     <build>
         <finalName>web-app-sample</finalName>
